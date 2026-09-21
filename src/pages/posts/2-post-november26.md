@@ -1,17 +1,17 @@
 ---
-layout: ../../layouts/BaseLayout.astro
-title: 'Acquainted Colorado October 2026'
+layout: /layouts/BaseLayout.astro
+title: 'Acquainted Colorado November 2026'
 pubDate: 2026-10-01
 description: 'Events to meet people and things to do in October 2026.'
 author: 'BreOutside'
 image:
-    url: '../public/assets/october26.jpg'
+    url: '/assets/november26.jpg'
     alt: 'Red and orange fall leaves'
 tags: ["october", "events", "meet people"]
 ---
-# Places to Get Acquainted with New People October 2026
+# Places to Get Acquainted with New People November 2026
 
-Published on: 2026-10-01
+Published on: 2026-11-01
 
 Welcome to my _new blog_ where I'll be sharing things going on in-person and online where you can get acquainted with new people.
 
