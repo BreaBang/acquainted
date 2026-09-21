@@ -12,6 +12,7 @@ import PortfolioPreview from '../components/PortfolioPreview.astro';
 import Skills from '../components/Skills.astro';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import localLogoImage from '../assets/breoutsidelogo.png'
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
@@ -83,7 +84,7 @@ const projects = (await getCollection('work'))
 				<div class="gallery">
 					<Grid variant="small">
 						{
-							[img alt="BreOutside Logo" src="/public/assets/breoutsidelogo.png", 'Your Name Here', 'Sponsor Wanted', 'Your Logo Here', 'Sponsor Wanted'].map((brand) => (
+							[localLogoImage, 'Your Name Here', 'Sponsor Wanted', 'Your Logo Here', 'Sponsor Wanted'].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
