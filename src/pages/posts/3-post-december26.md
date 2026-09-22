@@ -4,9 +4,6 @@ title: 'Acquainted Colorado October 2026'
 pubDate: 2026-12-01
 description: 'Events to meet people and things to do in October 2026.'
 author: 'BreOutside'
-image:
-    url: '../public/assets/october26.jpg'
-    alt: 'Red and orange fall leaves'
 tags: ["october", "events", "meet people"]
 ---
 # Places to Get Acquainted with New People December 2026
