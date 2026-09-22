@@ -5,7 +5,7 @@ pubDate: 2026-10-01
 description: 'Events to meet people and things to do in October 2026.'
 author: 'BreOutside'
 image:
-    url: /public/assets/november26.jpg
+    url: '../public/assets/november26.jpg'
     alt: 'Red and orange fall leaves'
 tags: ["october", "events", "meet people"]
 ---
