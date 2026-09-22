@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/BaseLayout.astro
+layout: /layouts/BaseLayout.astro
 title: 'Acquainted Colorado October 2026'
 pubDate: 2026-12-01
 description: 'Events to meet people and things to do in October 2026.'
