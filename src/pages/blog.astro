@@ -14,7 +14,7 @@ import BlogPost from '../components/BlogPosts.astro';
   </head>
   <body>
     <BaseLayout title={pageTitle}>
-        <p>Event Blog</p>
+       <h2 class="section-title">Event Blog</h2>
         <ul>
           {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
         </ul>
