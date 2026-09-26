@@ -1,7 +1,7 @@
 ---
 import ContactCTA from '../components/ContactCTA.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { BlogPosts } from '../components/BlogPosts.astro';
+import { Blogposts } from '../components/BlogPosts.astro';
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
 const pageTitle = "My Astro Learning Blog";
@@ -16,7 +16,7 @@ const pageTitle = "My Astro Learning Blog";
 					<h1>Find an Event</h1>
                          <p>Blog Post List</p>
         <ul>
-          {allPosts.map((post: any) => <BlogPosts url={post.url} title={post.frontmatter.title} />)}
+          {allPosts.map((post: any) => <Blogposts url={post.url} title={post.frontmatter.title} />)}
         </ul>
 				</div>
 			</section>
