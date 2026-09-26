@@ -1,97 +1,24 @@
 ---
-import ContactCTA from '../components/ContactCTA.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { BlogPosts } from '../components/BlogPosts.astro';
+
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
-const pageTitle = "My Astro Learning Blog";
+const pageTitle = "Event Blog";
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPosts.astro';
 ---
-
-<BaseLayout title="Events Blog | Acquainted Colorado" description="Acquainted Colorado Events List Blog">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<section>
-				<h2 class="section-title">Event Blog Posts</h2>
-				<div class="content">
-					<h1>Find an Event</h1>
-                         <p>Blog Post List</p>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width" />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <BaseLayout title={pageTitle}>
+        <p>Event Blog</p>
         <ul>
-          {allPosts.map((post: any) => <BlogPosts url={post.url} title={post.frontmatter.title} />)}
+          {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
         </ul>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">Disclaimer</h2>
-				<div class="content">
-					<p>These events are not hosted by or affiliated with Acquainted Colorado in any way shape or form. Acquainted Colorado does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Acquainted Colorado at your own risk.**</p>
-				</div>
-			</section>
-			<section>
-				<h2 class="section-title">For Organizers</h2>
-				<div class="content">
-					<p>Want to see your events listed? (Or want us to take your events off our list?) Let us know!</p>
-				</div>
-			</section>
-		</main>
+    </BaseLayout>
 
-		<ContactCTA />
-	</div>
-</BaseLayout>
-
-<style>
-	.about {
-		display: flex;
-		flex-direction: column;
-		gap: 3.5rem;
-	}
-
-	img {
-		margin-top: 1.5rem;
-		border-radius: 1.5rem;
-		box-shadow: var(--shadow-md);
-	}
-
-	section {
-		display: flex;
-		flex-direction: column;
-		gap: 0.5rem;
-		color: var(--gray-200);
-	}
-
-	.section-title {
-		grid-column-start: 1;
-		font-size: var(--text-xl);
-		color: var(--gray-0);
-	}
-
-	.content {
-		grid-column: 2 / 4;
-	}
-
-	.content :global(a) {
-		text-decoration: 1px solid underline transparent;
-		text-underline-offset: 0.25em;
-		transition: text-decoration-color var(--theme-transition);
-	}
-
-	.content :global(a:hover),
-	.content :global(a:focus) {
-		text-decoration-color: currentColor;
-	}
-
-	@media (min-width: 50em) {
-		.about {
-			display: grid;
-			grid-template-columns: 1fr 60% 1fr;
-		}
-
-		.about > :global(:first-child) {
-			grid-column-start: 2;
-		}
-
-		section {
-			display: contents;
-			font-size: var(--text-lg);
-		}
-	}
-</style>
+  </body>
+</html>
