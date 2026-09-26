@@ -13,6 +13,8 @@ import Skills from '../components/Skills.astro';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 import localLogoImage from '../assets/breoutsidelogo.png'
+import { BlogPosts } from '../components/BlogPosts.astro';
+import { Blog } from './blog.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('work'))
