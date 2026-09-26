@@ -1,6 +1,10 @@
 ---
 import ContactCTA from '../components/ContactCTA.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { BlogPosts } from '../components/BlogPosts.astro';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const {title, url } = Astro.props;
+const pageTitle = "My Astro Learning Blog";
 ---
 
 <BaseLayout title="Events Blog | Acquainted Colorado" description="Acquainted Colorado Events List Blog">
@@ -10,12 +14,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 				<h2 class="section-title">Event Blog Posts</h2>
 				<div class="content">
 					<h1>Find an Event</h1>
-                        <p>Get acquainted with other people, in-person and virtually. Events are posted by month.</p>
-                        <ul>
-                            <li><a href="/pages/posts/1-post-december2026.md">October 2026</a></li>
-                            <li>November 2026</li>
-                            <li>December 2026</li>
-                        </ul>
+                         <p>Blog Post List</p>
+        <ul>
+          {allPosts.map((post: any) => <BlogPosts url={post.url} title={post.frontmatter.title} />)}
+        </ul>
 				</div>
 			</section>
 			<section>
