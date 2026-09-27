@@ -1,14 +1,14 @@
 ---
 title: Art
-publishDate: 2020-03-02 00:00:00
+publishDate: September 2026
 img: /assets/art.jpg
-img_alt: Iridescent ripples of a bright blue and pink liquid
+img_alt: Painting drawing colorful
 description: |
-  We designed a whodunnit-style game to introduce Markdown formatting. Suspense — suspicion — syntax!
+ Links to resources related to art
 tags:
-  - Design
-  - Dev
-  - User Testing
+  - Dance
+  - Draw
+  - Paint
 ---
 
 ## Level-two heading

@@ -1,14 +1,14 @@
 ---
 title: Pets
-publishDate: 2019-10-02 00:00:00
+publishDate: September 2026
 img: /assets/pets.jpg
-img_alt: Soft pink and baby blue water ripples together in a subtle texture.
+img_alt: A dog and cat on a couch
 description: |
-  We developed brand positioning and design assets for the launch
-  of a new colored water product.
+  Links to help you be the best pet parent ever.
 tags:
-  - Design
-  - Branding
+  - Pets
+  - Training
+  - Insurance
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur posuere commodo venenatis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam non ligula vel metus efficitur hendrerit. In hac habitasse platea dictumst. Praesent et mauris ut mi dapibus semper. Curabitur tortor justo, efficitur sit amet pretium cursus, porta eget odio. Cras ac venenatis dolor. Donec laoreet posuere malesuada. Curabitur nec mi tempor, placerat leo sit amet, tincidunt est. Quisque pellentesque venenatis magna, eget tristique nibh pulvinar in. Vestibulum vitae volutpat arcu. Aenean ut malesuada odio, sit amet pellentesque odio. Suspendisse nunc elit, blandit nec hendrerit non, aliquet at magna. Donec id leo ut nulla sagittis sodales.
