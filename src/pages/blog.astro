@@ -19,21 +19,25 @@ import BlogPost from '../components/BlogPosts.astro';
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
             <h2 class="section-title">Event Blog</h2>
+        </header>
               <ul>
                 {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
               </ul>
-        </header>
       </section>
-        <h2 class="section-title">Disclaimer</h2>
-				<div class="content">
-        <p>These events are not hosted by or affiliated with Acquainted Colorado in any way shape or form. Acquainted Colorado does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Acquainted Colorado at your own risk.**</p>
-    </div>
+      <section class="section with-background with-cta">
+				<header class="section-header stack gap-2 lg:gap-4">
+          <h3 class="section-title">Disclaimer</h3>
+        </header>
+            <div class="content">
+              <p>These events are not hosted by or affiliated with Acquainted Colorado in any way shape or form. Acquainted Colorado does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Acquainted Colorado at your own risk.**</p>
+            </div>
+      </section>
     <section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-    <h2 class="section-title">For Event Hosts</h2>
+          <h2 class="section-title">For Event Hosts</h2>
+        </header>
     <p>Want to see your events listed? (Or want us to take your events off our list?) Let us know!</p>
-     </header>
-      </section>
+    </section>
       </main>
 				<div class="content">
           </div>
