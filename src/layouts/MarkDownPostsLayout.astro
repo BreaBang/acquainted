@@ -1,7 +1,25 @@
 ---
 import { BaseLayout } from "./BaseLayout.astro";
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import style from '../styles/global.css'
 const { frontmatter } = Astro.props;
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
 ---
+<html lang="en">
+	<head>
+		<MainHead title={title} description={description} />
+	</head>
+  <div class="stack backgrounds">
+			<Nav />
+			<slot />
+			<Footer />
+		</div>
 <BaseLayout title={frontmatter.title}>
   <p><em>{frontmatter.description}</em></p>
   <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
@@ -18,6 +36,7 @@ const { frontmatter } = Astro.props;
 
   <slot />
 </BaseLayout>
+</html>
 <style>
   a {
     color: #00539F;
