@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 // Component Imports
 import CallToAction from '../components/CallToAction.astro';
+import BlogCTA from '../components/BlogCTA.astro'
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Grid from '../components/Grid.astro';
@@ -12,6 +13,7 @@ import ResourcesPreview from '../components/ResourcesPreview.astro'
 import Skills from '../components/Skills.astro';
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogCTA from '../components/BlogCTA.astro';
 
 // Content Fetching: List four most recent work projects
 const projects = (await getCollection('resources'))
@@ -40,6 +42,7 @@ const projects = (await getCollection('resources'))
 					height="680"
 					src="/assets/colorado.jpg"
 				/>
+				<BlogCTA />
 			</header>
 			<Skills />
 		</div>
