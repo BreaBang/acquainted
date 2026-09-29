@@ -1,9 +1,11 @@
 ---
 import { BaseLayout } from "./BaseLayout.astro";
+const { frontmatter } = Astro.props;
+
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import style from '../styles/global.css'
-const { frontmatter } = Astro.props;
+
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
