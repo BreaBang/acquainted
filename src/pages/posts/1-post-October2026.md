@@ -1,7 +1,7 @@
 ---
 layout: ../../layouts/MarkDownPostsLayout.astro
 title: October 2026
-pubDate: 2026-10-02
+pubDate: 2026-10-01
 author: Bre
 img: /assets/art.jpg
 img_alt: Painting drawing colorful
