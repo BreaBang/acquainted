@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/MarkDownPostsLayout.astro
 title: October 2026
 pubDate: 2026-10-02
 author: Bre
