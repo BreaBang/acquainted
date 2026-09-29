@@ -1,9 +1,14 @@
 ---
-title: 'November 2026'
-description: 'Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.'
-pubDate: '11-01-2026'
-heroImage: '/public/assets/november26.jpg'
+layout: ../../layouts/MarkDownPostsLayout.astro
+title: October 2026
+pubDate: 2026-10-02
+author: Bre
+img: /assets/art.jpg
+img_alt: Painting drawing colorful
+description: |
+    October 2026 events and things to do
 ---
+
 
 Here is a sample of some basic Markdown syntax that can be used when writing Markdown content in Astro.
 
