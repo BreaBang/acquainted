@@ -7,10 +7,6 @@ img: /assets/art.jpg
 img_alt: Painting drawing colorful
 description: |
     October 2026 events and things to do
-tags: 
-    - October
-    - Leaf Peeping
-    - Events
 ---
 
 # October 2026 Events
