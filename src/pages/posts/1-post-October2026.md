@@ -3,7 +3,7 @@ layout: ../../layouts/MarkDownPostsLayout.astro
 title: October 2026
 pubDate: 2026-10-02
 author: Bre
-iimg: /assets/art.jpg
+img: /assets/art.jpg
 img_alt: Painting drawing colorful
 description: |
     October 2026 events and things to do
