@@ -1,12 +1,15 @@
 ---
-title: 'October 2026'
+title: October 2026
 pubDate: 2026-10-02
-description: 'October 2026 events and things to do'
-author: 'Astro Learner'
-image:
-    url: 'https://docs.astro.build/assets/rose.webp'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["October", "Leaf Peeping", "Events"]
+author: Bre
+iimg: /assets/art.jpg
+img_alt: Painting drawing colorful
+description: |
+    October 2026 events and things to do
+tags: 
+    - October
+    - Leaf Peeping
+    - Events
 ---
 
 # October 2026 Events
