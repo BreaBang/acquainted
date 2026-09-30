@@ -1,6 +1,6 @@
 ---
-title: Basic Needs
-publishDate: September 2026
+title: Books
+publishDate: October 2026
 img: /assets/books.png
 img_alt: An open book on a desk in a well lit library.
 description: |

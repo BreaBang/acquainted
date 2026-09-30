@@ -1,6 +1,6 @@
 ---
 title: Learning
-publishDate: September 2026
+publishDate: October 2026
 img: /assets/Learning.jpg
 img_alt: An empty classroom
 description: |
