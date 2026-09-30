@@ -22,7 +22,7 @@ description: |
 
 - **Oct 11** - <a href="https://womenswilderness.org/programs/a-journey-of-tending/" target="_blank">A Journey of Tending at REI Flagship</a> | Cost: $25-45
 
--- **Oct 13** - <a href="https://rarfrontrange.com/calendar" target="_blank">See U Next Tuesday Bike Ride in Colorado Springs</a> | Cost: $0
+- **Oct 13** - <a href="https://rarfrontrange.com/calendar" target="_blank">See U Next Tuesday Bike Ride in Colorado Springs</a> | Cost: $0
 
 - **Oct 15** - <a href="https://www.instagram.com/p/DdET9U2RHIS/" target="_blank">Fems and Thems Normal Ride (Bikes)</a> | Cost: $0
 
@@ -40,7 +40,6 @@ description: |
 
 
 ## Virtual
-- **Date** - <a href="" target="_blank">Event Name</a> | Cost: $
+
 - **Oct 19** - <a href="https://breoutside.com/" target="_blank">Yoga with BreOutside</a>
 - **Oct 26** - <a href="https://breoutside.com/" target="_blank">Yoga with BreOutside</a>
-- **Date** - <a href="" target="_blank">Event Name</a> | Cost: $
