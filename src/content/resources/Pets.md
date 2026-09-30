@@ -19,8 +19,8 @@ Nothing below should be taken as legal, medical or any other kind of advice. We 
 
 ## Spay and Neuter
 
--
--Spay Colorado: Directory of clinics
+- <a href="https://humanecolorado.org/services/spay-neuter-clinic/" target="_blank">Humane Colorado</a>
+- Spay Colorado: Directory of clinics
 
 ## Affordable Vet Care
 
