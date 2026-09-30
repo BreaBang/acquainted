@@ -58,8 +58,10 @@ Last, in general, a good sign is when a breeder states they will take the dog ba
 
 Again, do your own research.
 
-### Why not buy puppies from social media
+### Social Media Puppies
 
-One good reason is there are a lot of scams on social media. People will get a deposit from you and then never deliver the puppy.
+One good reason not to buy puppies from Facebook or social media in general is there are a lot of scams on social media. People will get a deposit from you and then never deliver the puppy.
 
 The main concern though is these breeders are usually not concerned with breeding healthy dogs and don't always ensure the health of the parent dogs either. Sometimes rescues enable these types of breeders by taking their sick dogs and "saving them".
+
+Most ethical breeders do not need to advertise to sell puppies on social media. They usually have waitlists. If you want the best chance of having a healthy dog do your research and choose a breeder who cares about the health of their dogs and it's offsprings.
