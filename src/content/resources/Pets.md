@@ -22,8 +22,14 @@ Nothing below should be taken as legal, medical or any other kind of advice. We 
 - <a href="https://humanecolorado.org/services/spay-neuter-clinic/" target="_blank">Humane Colorado</a>
 - Spay Colorado: Directory of clinics
 
-## Affordable Vet Care
+## Affordable Vet Care and Vaccines
 
+- <a href="https://humanecolorado.org/services/spay-neuter-clinic/" target="_blank">Humane Colorado</a>
+
+## Adopt
+
+- <a href="https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Animal-Shelter" target="_blank"> Denver Animal Shelter</a>
+- <a href="https://humanecolorado.org/services/spay-neuter-clinic/" target="_blank">Humane Colorado</a>
 ## Pet Insurance
 
 Pets get sick. If you have insurance, it takes some of the financial stress out of the decisions you'll make about your pet's treatment options.
