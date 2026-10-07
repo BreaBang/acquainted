@@ -1,4 +1,5 @@
 ---
+import { getCollection } from 'astro:content';
 
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
@@ -6,6 +7,18 @@ const pageTitle = "Colorado Side Quests Event Blog";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPosts.astro';
 import Grid from '../components/Grid.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+import Pill from '../components/Pill.astro';
+import ResourcesPreview from '../components/ResourcesPreview.astro'
+import Skills from '../components/Skills.astro';
+
+// Content Fetching: List four most recent work projects
+const projects = (await getCollection('resources'))
+	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
+	.slice(0, 4);
+
 
 ---
 <html lang="en">
@@ -53,12 +66,6 @@ import Grid from '../components/Grid.astro';
 					</Grid>
 				</div>
 			</section>	
-    <section class="section with-background with-cta">
-				<header class="section-header stack gap-1 lg:gap-2">
-          <h3 class="section-title">For Event Hosts</h3>
-        </header>
-    <p>Want to see your events listed? (Or want us to take your events off our list?) Let us know!</p>
-    </section>
       </main>
 				<div class="content">
           </div>
