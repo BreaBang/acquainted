@@ -29,8 +29,6 @@ The books listed below are from our book sponsors. Book Sponsors pay a small fee
 
 We do not read the books before posting them. We do not endorse the views of any books listed or their author(s). 
 
-Become a Monthly Book Sponsor here. 
-
-- Medicaid
+Become a Monthly Book Sponsor: Coming Soon. 
 
 
