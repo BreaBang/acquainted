@@ -47,17 +47,7 @@ const { Content } = await render(entry);
 					</Hero>
 				</div>
 			</header>
-			<main class="wrapper">
-				<div class="stack gap-10 content">
-					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
-					<div class="content">
-						<Content />
-					</div>
-				</div>
-			</main>
-		</div>
-
-<section class="section with-background bg-variant">
+			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
 					<h3>Sponsors</h3>
 					<p>
@@ -76,6 +66,15 @@ const { Content } = await render(entry);
 					</Grid>
 				</div>
 			</section>	
+			<main class="wrapper">
+				<div class="stack gap-10 content">
+					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					<div class="content">
+						<Content />
+					</div>
+				</div>
+			</main>
+		</div>
 		<ContactCTA />
 	</div>
 </BaseLayout>
