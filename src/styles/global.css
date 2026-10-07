@@ -216,11 +216,9 @@ h5 {
 	font-weight: 500;
 
 }
-.sponsor-logo-1{
-	background-image: url("/assets/breoutsidelogo.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	width: fit-content;
+.img-logo{
+	width: 100%;
+	position: relative;
 }
 
 .gap-2 {
