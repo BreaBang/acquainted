@@ -5,6 +5,7 @@ const {title, url } = Astro.props;
 const pageTitle = "Colorado Side Quests Event Blog";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPosts.astro';
+import Grid from '../components/Grid.astro';
 
 ---
 <html lang="en">
@@ -32,6 +33,26 @@ import BlogPost from '../components/BlogPosts.astro';
               <p>These events are not hosted by or affiliated with Colorado Side Quests in any way shape or form. Acquainted Colorado does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Acquainted Colorado at your own risk.**</p>
             </div>
       </section>
+
+    <section class="section with-background bg-variant">
+				<header class="section-header stack gap-2 lg:gap-4">
+					<h3>Sponsors</h3>
+					<p>
+						We are always looking for sponsors to help pay for the website and time that goes into keeping it up-to-date!
+					</p>
+				</header>
+
+				<div class="gallery">
+					<Grid variant="small">
+						{[<a href="https://breoutside.com/" target="_blank" class="sponsor-name">BreOutside <img src="/assets/breoutsidelogo.png" class="img-logo"></a>,`Your Name Here`,"Sponsors Wanted", "Your Name Here", "Your Name Here", <a href="https://www.belleinkbooks.com/" target="_blank" class="sponsor-name">Belle Ink Books <img src="/assets/belleinklogo.png" class="img-logo"></a>].map((brand) => (
+								<li class="mention-card">
+									<p>{brand}</p>
+								</li>
+							))
+						}
+					</Grid>
+				</div>
+			</section>	
     <section class="section with-background with-cta">
 				<header class="section-header stack gap-1 lg:gap-2">
           <h3 class="section-title">For Event Hosts</h3>
