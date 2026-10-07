@@ -220,6 +220,7 @@ h5 {
 	background-image: url("/assets/breoutsidelogo.png");
 	background-repeat: no-repeat;
 	background-position: center;
+	width: fit-content;
 }
 
 .gap-2 {
