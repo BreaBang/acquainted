@@ -217,7 +217,7 @@ h5 {
 
 }
 .sponsor-logo-1{
-	background-image: url(/assets/breoutsidelogo.png);
+	background-image: url("/assets/breoutsidelogo.png");
 	background-repeat: no-repeat;
 	width: 80%;
 }
