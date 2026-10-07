@@ -216,9 +216,6 @@ h5 {
 	font-weight: 500;
 
 }
-.img-logo{
-	
-}
 
 .gap-2 {
 	gap: 0.5rem;
@@ -243,6 +240,14 @@ h5 {
 }
 .gap-48 {
 	gap: 12rem;
+}
+
+@media (min-width: 50em){
+	.sponsor-name {
+		font-size: var(--text-1xl);
+		text-decoration: none;
+		font-weight: 300;
+	}
 }
 
 @media (min-width: 50em) {
