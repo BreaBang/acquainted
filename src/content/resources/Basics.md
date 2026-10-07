@@ -22,11 +22,13 @@ None of the organizations listed here are affiliated with Colorado Side Quests a
 
 ### Food
 
-- SNAP (aka Food Stamps)
+- SNAP (aka Food Stamps): <a href="https://peak.my.site.com/peak/s/peak-landing-page?language=en_US" target="_blank">Apply online</a>
 
 ### Shelter
 
 #### Rental Assistance
+
+- TRUA: Next application dates are October 20, November 17 and December 15. <a href="https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Department-of-Housing-Stability/Resident-Resources/Rent-and-Utility-Help" target="_blank">Learn more about TRUA and apply on the opening dates.</a>
 
 #### Mortgage Assistance
 
@@ -34,6 +36,9 @@ None of the organizations listed here are affiliated with Colorado Side Quests a
 
 ### Medical
 
-- Medicaid
+- Medicaid: <a href="https://peak.my.site.com/peak/s/peak-landing-page?language=en_US" target="_blank">Apply online</a>
+
+### Cash Assistance
+- TANF (aka Cash Assistance) <a href="https://peak.my.site.com/peak/s/peak-landing-page?language=en_US" target="_blank">Apply online</a>
 
 

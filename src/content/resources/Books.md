@@ -17,11 +17,9 @@ Please do NOT download or read pirated books. It's stealing and it does hurt the
 
 ## Non-Fiction
 
-<script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="colorado-side-quests"></script>
-          
+<script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="colorado-side-quests-non-fiction-book-list"></script>        
 
 ## Fiction
-
 
 <script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="colorado-side-quests-fiction-book-list"></script>
           
