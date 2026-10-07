@@ -18,7 +18,7 @@ tags:
 
 Here we're keeping a running list of community resources. We also recommend calling 211, which may be able to help you further.
 
-None of the organizations listed here are affiliated with Colorado Side Quests and we are not endorsing any organizations, programs or services listed. Additionally, if you are one of these organizations and want us to remove you from this page, please let us know (or vice versa). 
+None of the organizations listed here are affiliated with Colorado Side Quests and we are not endorsing any organizations, programs or services listed. Additionally, if you are one of these organizations and want us to remove you from this page, please let us know (or vice versa).
 
 ### Food
 
@@ -34,6 +34,9 @@ None of the organizations listed here are affiliated with Colorado Side Quests a
 
 - Coming Soon (we hope)
 
+#### Eviction Defense
+
+- Colorado Poverty Law Project: <a href="https://copovertylawproject.org" target="_blank">Get assistance with the eviction process and potentially legal support</a>
 #### Shelters and Hotel Voucher Programs
 
 - Coming Soon (we hope)
@@ -48,5 +51,9 @@ None of the organizations listed here are affiliated with Colorado Side Quests a
 
 ### Cash Assistance
 - TANF (aka Cash Assistance) <a href="https://peak.my.site.com/peak/s/peak-landing-page?language=en_US" target="_blank">Apply online</a>
+
+### Disability
+
+- Colorado Poverty Law Project: <a href="https://copovertylawproject.org/our-work/benefits-assistance-program/" target="_blank">Free SSI/SSDI Application Assistance</a>
 
 
