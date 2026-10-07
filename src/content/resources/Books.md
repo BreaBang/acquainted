@@ -11,13 +11,12 @@ tags:
   - Book Club
 ---
 
-## Colordo Side Quests Book Club
+## Colordo Side Quests Non-Fiction Book List
 
-> What we're reading!
+> Our list of must reads.
 
-Here we're keeping a running list of community resources. We also recommend calling 211, which may be able to help you further.
-
-None of the organizations listed here are affiliated with Colorado Side Quests and we are not endorsing any organizations, programs or services listed. Additionally, if you are one of these organizations and want us to remove you from this page, please let us know (or vice versa). 
+<script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="colorado-side-quests"></script>
+          
 
 ## Books That You Should Read
 
