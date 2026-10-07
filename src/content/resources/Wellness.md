@@ -15,10 +15,10 @@ On this page you'll find links to resources to help you stay well. Please rememb
 
 ## Yoga
 
-- BreOutside Yoga: Mondays 6:30 PM Denver Time | Virtual | Cost: $7.75 per person per group class (Private classes starting at $20/class)
-- Urban Sanctuary: Schedule varies | In-person and virtual | Cost: Membership options vary
+- <a href="https://breoutside.com/" target="_blank">BreOutside Yoga</a>: Mondays 6:30 PM Denver Time | Virtual | Cost: $7.75 per person per group class (Private classes starting at $20/class)
+- <a href="https://urbansanctuary.love/home" target="_blank">Urban Sanctuary</a>: Schedule varies | In-person and virtual | Cost: Membership options vary
 
 ## Bike
-- Black Girls Do Bike Denver
-- Radical Adventure 
+- <a href="https://www.instagram.com/bgdbdenver/" target="_blank">Black Girls Do Bike Denver</a>
+- <a href="https://rarfrontrange.com/" target="_blank">Radical Adventure Riders</a>
 
