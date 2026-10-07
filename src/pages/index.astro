@@ -81,8 +81,7 @@ const projects = (await getCollection('resources'))
 
 				<div class="gallery">
 					<Grid variant="small">
-						{
-							[<a href="https://breoutside.com/" class="sponsor-name">BreOutside<img src="/assets/breoutsidelogonb.png" class="img-logo"></a>, 'Sponsor Wanted', 'Your Logo Here',].map((brand) => (
+						{[`Your Logo`,"your name here", <a href="https://breoutside.com/" class="sponsor-name">BreOutside <img src="/assets/breoutsidelogonb.png" class="img-logo"></a>].map((brand) => (
 								<li class="mention-card">
 									<p>{brand}</p>
 								</li>
