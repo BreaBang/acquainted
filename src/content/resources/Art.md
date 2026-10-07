@@ -13,8 +13,9 @@ tags:
 
 ## Learn to Draw
 
-- Draw a Box: Comprehensive drawing course that will help you gain spacial awareness, control and strong lines.
-- C52
+- <a href="https://drawabox.com/lesson/1/5/normalvector" target="_blank">Draw a Box</a>: Comprehensive drawing course that will help you gain spacial awareness, control and strong lines.
+- <a href="https://www.soloartcurriculum.com" target="_blank">RadioRunner's Curriculum for the Solo Artist</a>: a curriculum for learning to draw with both free and paid resources.
+- <a href="https://www.proko.com/timer" target="_blank">Proko Timer Tool</a>: Free (with paid options) drawing timer tool with photo references. Great for gesture drawing.
 
 ## Paint
 
@@ -26,7 +27,7 @@ tags:
 
 ## Dance
 
-- Coming Soon
+- <a href="https://www.balletbasedmovement.com/2023-basic-ballet-series/" target="_blank">Ballet Based Movement</a>: Free Youtube videos and paid online classes. It is advertised for 50+ AND beginners. It's really great for anyone and everyone at all ages.
 
 ## Write
 
