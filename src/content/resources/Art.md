@@ -23,7 +23,7 @@ tags:
 
 ## Yarn Stuff
 
-- Coming Soon
+- <a href="https://www.ravelry.com" target="_blank">Ravelry</a>: Great website to find free patterns, buy used yarn and supplies and meet other yarn people.
 
 ## Dance
 
