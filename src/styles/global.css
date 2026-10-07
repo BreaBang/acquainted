@@ -210,6 +210,13 @@ h5 {
 	flex-direction: column;
 }
 
+.sponsor-name{
+	font-size: var(--text-2xl);
+	text-decoration: none;
+	font-weight: 500;
+
+}
+
 .gap-2 {
 	gap: 0.5rem;
 }
