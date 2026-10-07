@@ -32,7 +32,15 @@ None of the organizations listed here are affiliated with Colorado Side Quests a
 
 #### Mortgage Assistance
 
+- Coming Soon (we hope)
+
 #### Shelters and Hotel Voucher Programs
+
+- Coming Soon (we hope)
+
+#### Utilities
+
+- <a href="https://www.denvergov.org/Government/Agencies-Departments-Offices/Agencies-Departments-Offices-Directory/Denver-Human-Services/Be-Supported/Additional-Assistance/LEAP-Low-Income-Energy-Assistance-Program" target="_blank">Low-Income Energy Assistance Program (LEAP) for Denver Residents </a>
 
 ### Medical
 
