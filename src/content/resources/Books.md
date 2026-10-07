@@ -11,6 +11,10 @@ tags:
   - Book Club
 ---
 
+On this page we're posting books! We've linked them all to <a href="https://bookshop.org/shop/BelleInkBooks" target="_blank">Bookshop.org</a> (via an affiliate link), however, most if not all are available for free via your local library. Get as many library cards as your community allows.
+
+Please do NOT download or read pirated books. It's stealing and it does hurt the book's author. Even if you don't care about the publisher's bottom line, please remember the author WORKED on that book and deserves to be compensated fairly for their time and labor.
+
 ## Non-Fiction
 
 <script src="https://bookshop.org/widgets.js" data-type="list" data-list-slug="colorado-side-quests"></script>
