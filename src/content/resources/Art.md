@@ -31,4 +31,4 @@ tags:
 
 ## Write
 
-- Coming Soon
+- <a href="https://www.novelist.app" target="_blank">Novelist:</a> Free writing software available to use on the web, or via app in Google Play or Apple's App Store. It's got organization tools for characters, props, locations, and more. You can outline things and write. It's 100% free and stores things locally. AI free.
