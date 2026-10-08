@@ -17,8 +17,8 @@
 	--gray-999: #ffffff;
 
 	--accent-light: #523E87;
-	--accent-regular: #523E87;
-	--accent-dark: #523E87;
+	--accent-regular: #bba9ee;
+	--accent-dark: #9175de;
 	--accent-overlay: hsla(22.5, 17.4%, 36.1%, 0.33);
 	--accent-subtle-overlay: hsla(23, 17%, 47%, 0.33);
 	--accent-text-over: var(--gray-0);
@@ -211,6 +211,10 @@ h5 {
 }
 
 .sponsor-name{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	font-size: var(--text-2xl);
 	text-decoration: none;
 	font-weight: 500;
