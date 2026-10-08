@@ -247,7 +247,7 @@ h5 {
 	gap: 12rem;
 }
 
-@media (max-width: 480px){
+@media (max-width: 770px){
 	.sponsor-name {
 		font-size: 1rem;
 		text-decoration: none;
