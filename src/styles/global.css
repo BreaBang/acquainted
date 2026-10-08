@@ -16,9 +16,9 @@
 	--gray-999_40: hsla(var(--gray-999-basis), 0.4);
 	--gray-999: #ffffff;
 
-	--accent-light: #B9D175;
-	--accent-regular: #450C3F;
-	--accent-dark: #D9EFBD;
+	--accent-light: #C5CBE3;
+	--accent-regular: #D79922;
+	--accent-dark: #EFE2BA;
 	--accent-overlay: hsla(22.5, 17.4%, 36.1%, 0.33);
 	--accent-subtle-overlay: hsla(23, 17%, 47%, 0.33);
 	--accent-text-over: var(--gray-0);
