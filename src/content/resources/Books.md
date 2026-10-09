@@ -29,6 +29,6 @@ The books listed below are from our book sponsors. Book Sponsors pay a small fee
 
 We do not read the books before posting them. We do not endorse the views of any books listed or their author(s). 
 
-Become a Monthly Book Sponsor: <a href="https://pci.jotform.com/form/262814316921153" target="_blank">Fill out the Book Sponsor Order Form</a>. 
+Become a Monthly Book Sponsor starting at $25/book by <a href="https://pci.jotform.com/form/262814316921153" target="_blank">filling out the Book Sponsor Order Form</a>. 
 
 
