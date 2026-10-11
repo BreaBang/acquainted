@@ -1,5 +1,5 @@
 ---
-layout: ../../layouts/MarkDownPostsLayout2.astro
+layout: src/layouts/MarkDownPostsLayout2astro
 title: October 2026
 pubDate: 2026-10-01
 author: Bre
