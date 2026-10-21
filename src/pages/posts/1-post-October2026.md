@@ -4,7 +4,7 @@ title: October 2026
 pubDate: 2026-10-01
 author: Bre
 img: /assets/october26.jpg
-img_alt: Painting drawing colorful
+img_alt: October
 description: |
     October 2026 events and things to do
 ---
