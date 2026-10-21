@@ -21,22 +21,20 @@ interface Props {
 // https://docs.astro.build/en/guides/routing/#dynamic-routes
 export async function getStaticPaths() {
 	const resource = await getCollection('resources');
+  const posts = await getCollection('posts');
 	return resource.map((entry) => ({
 		params: { slug: entry.id },
 		props: { entry },
 	}));
-}
-
-export async function getStaticPaths() {
-	const posts = await getCollection('posts');
-	return posts.map((posts) => ({
-		params: { slug: posts.id },
-		props: { entry },
-	}));
+  return posts.map((post) => ({
+    params: { slug: post.id },
+		props: { post },
+  }));
 }
 
 
 const { entry } = Astro.props;
+const { post } = Astro.props;
 const { Content } = await render(entry);
 
 
@@ -54,6 +52,15 @@ const { Content } = await render(entry);
 							</div>
 							<p class="description">{entry.data.description}</p>
 						</div>
+            <div class="wrapper stack gap-2">
+					<a class="back-link" href="/blog/"><Icon icon="arrow-left" /> Posts</a>
+					<Hero title={post.data.title} align="start">
+						<div class="details">
+							<div class="tags">
+								{post.data.tags.map((t) => <Pill>{t}</Pill>)}
+							</div>
+							<p class="description">{post.data.description}</p>
+						</div>
 					</Hero>
 				</div>
 			</header>
@@ -61,6 +68,16 @@ const { Content } = await render(entry);
 			<main class="wrapper">
 				<div class="stack gap-10 content">
 					{entry.data.img && <img src={entry.data.img} alt={entry.data.img_alt || ''} />}
+					<div class="content">
+						<Content />
+					</div>
+				</div>
+			</main>
+		</div>
+		
+	</div>
+  	<div class="stack gap-10 content">
+					{post.data.img && <img src={post.data.img} alt={post.data.img_alt || ''} />}
 					<div class="content">
 						<Content />
 					</div>
