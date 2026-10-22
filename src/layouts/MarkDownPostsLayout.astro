@@ -5,6 +5,7 @@ import BaseLayout from "./BaseLayout.astro";
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import Header from '../components/Header.astro';
+import { MainHead } from '../components/MainHead.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -13,7 +14,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
-		<BaseLayout title={title} description={description} />
+		<MainHead title={title} description={description} />
 		<style>
 			main {
 				width: calc(100% - 2em);
