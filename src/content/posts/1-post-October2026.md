@@ -8,10 +8,7 @@ img_alt: Painting drawing colorful
 description: |
     October 2026 events and things to do
 ---
-
 # October 2026 Events
-<Header title="October 2026" ></Header>
-<h1 class="title">October 2026</h1>
 
 ## In-Person
 - **Oct 3** - <a href="https://womenswilderness.org/programs/run-5k/" target="_blank">I Can 5k Fun-raiser in Thornton</a> | Cost: Donation-Based
