@@ -1,16 +1,19 @@
 ---
-layout: ../../layouts/MarkDownPostsLayout.astro
-title: October 2026
-pubDate: 2026-10-01
-author: Bre
-img: /assets/october26.jpg
-img_alt: Painting drawing colorful
+title: Basic Needs
+publishDate: October 2026
+img: /assets/basic.jpg
+img_alt: four blocks with icons describing the basic needs of food, shelter, medication and clothing.
 description: |
-    October 2026 events and things to do
+ Links to resources related to having your basic needs met
+tags:
+  - Food
+  - IDs
+  - Shelter
+  - Medication
 ---
-# October 2026 Events
+## October 2026 Events
 
-## In-Person
+### In-Person
 - **Oct 3** - <a href="https://womenswilderness.org/programs/run-5k/" target="_blank">I Can 5k Fun-raiser in Thornton</a> | Cost: Donation-Based
 
 - **Oct 7** - <a href="https://www.instagram.com/p/DdkTc4NJgGn/" target="_blank">The Jorts Ride (Bikes)</a> | Cost: $0
@@ -37,7 +40,7 @@ description: |
 - **Oct 29** - <a href="https://www.instagram.com/p/DdET9U2RHIS/" target="_blank">Fems and Thems Costume Ride (Bikes)</a> | Cost: $0
 
 
-## Virtual
+### Virtual
 
 - **Oct 19** - <a href="https://breoutside.com/" target="_blank">Yoga with BreOutside</a>
 - **Oct 26** - <a href="https://breoutside.com/" target="_blank">Yoga with BreOutside</a>
