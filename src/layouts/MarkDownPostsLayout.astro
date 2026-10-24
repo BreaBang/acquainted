@@ -5,6 +5,7 @@ import BaseLayout from "./BaseLayout.astro";
 import Footer from '../components/Footer.astro';
 import FormattedDate from '../components/FormattedDate.astro';
 import MainHead from "../components/MainHead.astro";
+import Nav from '../components/Nav.astro';
 
 type Props = CollectionEntry<'blog'>['data'];
 
@@ -12,8 +13,47 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="en">
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/052e29a73e9636e23a7052cd6/5f72fb09e924a45de7c6445e1.js");</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-83DZ9RCR4C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-83DZ9RCR4C');
+</script>
 	<head>
 		<MainHead title={title} description={description} />
+    <body>
+		<div class="stack backgrounds">
+			<Nav />
+				<main>
+			<article>
+				<div class="hero-image">
+					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
+				</div>
+				<div class="prose">
+					<div class="title">
+						<div class="date">
+							<FormattedDate date={pubDate} />
+							{
+								updatedDate && (
+									<div class="last-updated-on">
+										Last updated on <FormattedDate date={updatedDate} />
+									</div>
+								)
+							}
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+		</div>
 		<style>
 			main {
 				width: calc(100% - 2em);
@@ -52,34 +92,33 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 			.last-updated-on {
 				font-style: italic;
 			}
+
+			.backgrounds {
+				min-height: 100%;
+				isolation: isolate;
+				background:
+					/*noise*/
+					url('/assets/backgrounds/noise.png') top center/220px repeat,
+					/*footer*/ var(--bg-image-footer) bottom center/var(--bg-gradient-size) no-repeat,
+					/*header1*/ var(--bg-image-main-curves) top center/var(--bg-gradient-size) no-repeat,
+					/*header2*/ var(--bg-image-main) top center/var(--bg-gradient-size) no-repeat,
+					/*base*/ var(--gray-999);
+				background-blend-mode: /*noise*/
+					overlay,
+					/*footer*/ var(--bg-blend-mode),
+					/*header1*/ var(--bg-svg-blend-mode),
+					/*header2*/ normal,
+					/*base*/ normal;
+			}
+			@media (forced-colors: active) {
+				/* Deactivate custom backgrounds for high contrast users. */
+				.backgrounds {
+					background: none;
+					background-blend-mode: none;
+					--bg-gradient-size: none;
+				}
+			}
 		</style>
 	</head>
 
-	<body>
-		<main>
-			<article>
-				<div class="hero-image">
-					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
-				</div>
-				<div class="prose">
-					<div class="title">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on <FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<h1>{title}</h1>
-						<hr />
-					</div>
-					<slot />
-				</div>
-			</article>
-		</main>
-		<Footer />
-	</body>
 </html>
