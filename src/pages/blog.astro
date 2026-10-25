@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const allPosts = Object.values(import.meta.glob('./content/posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
 const pageTitle = "Colorado Side Quests Event Blog";
 import BaseLayout from '../layouts/BaseLayout.astro';
