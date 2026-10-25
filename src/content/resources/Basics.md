@@ -11,7 +11,6 @@ tags:
   - Shelter
   - Medication
 ---
-
 ## Resources to Meet Your Basic Needs
 
 > The squeaky wheel gets the grease. Ask for what you need and give back when you are able.
