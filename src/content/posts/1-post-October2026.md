@@ -1,5 +1,5 @@
 ---
-title: Basic Needs
+title: October 2026
 publishDate: October 2026
 img: /assets/basic.jpg
 img_alt: four blocks with icons describing the basic needs of food, shelter, medication and clothing.

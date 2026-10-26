@@ -1,5 +1,5 @@
 ---
-title: Art
+title: November 2026
 publishDate: October 2026
 img: /assets/art.jpg
 img_alt: Painting drawing colorful
