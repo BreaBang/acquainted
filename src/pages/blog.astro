@@ -1,14 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
-
 const allPosts = Object.values(import.meta.glob('./content/posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
 const pageTitle = "Colorado Side Quests Event Blog";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPosts.astro';
 import ContactCTA from '../components/ContactCTA.astro';
+import getPosts from '../content/posts';
 
-const posts = (await getCollection('posts'))
+const posts = (await getPosts('posts'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
