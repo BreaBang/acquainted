@@ -1,8 +1,11 @@
 ---
 
-const allPosts = Object.values(import.meta.glob('../content/posts/*.md', { eager: true }));
+//const allPosts = Object.values(import.meta.glob('../content/posts/*.md', { eager: true }));
+//{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+
+const posts = await getCollection("posts");
 const {title, url } = Astro.props;
-const pageTitle = "My Astro Learning Blog";
+const pageTitle = "Colorado Side Quests";
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogPost from '../components/BlogPosts.astro'; 
 ---
@@ -16,7 +19,7 @@ import BlogPost from '../components/BlogPosts.astro';
     <BaseLayout title={pageTitle}>
         <h1>Blog Posts</h1>
         <ul>
-          {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+          {posts.map((post) => post && <BlogPosts project={post} />)}
         </ul>
         <section>
           <h2>
