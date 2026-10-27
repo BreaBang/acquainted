@@ -16,7 +16,7 @@ const pageTitle = "Colorado Side Quests";
   <body>
     <BaseLayout title={pageTitle}>
       <section>
-        <p>Blog Post List</p>
+        <h1>Blog</h1>
         <ul>
           {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
         </ul>
