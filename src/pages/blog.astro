@@ -1,10 +1,10 @@
 ---
-
+import BaseLayout from '../layouts/BaseLayout.astro';
+import BlogPost from '../components/BlogPosts.astro';
 const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
 const {title, url } = Astro.props;
 const pageTitle = "Colorado Side Quests";
-import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogPost from '../components/BlogPosts.astro';
+
 
 ---
 <html lang="en">
