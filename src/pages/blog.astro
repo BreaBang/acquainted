@@ -3,7 +3,9 @@
 //const allPosts = Object.values(import.meta.glob('../content/posts/*.md', { eager: true }));
 //{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
 
-const posts = await getCollection("posts");
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
 const {title, url } = Astro.props;
 const pageTitle = "Colorado Side Quests";
 import BaseLayout from '../layouts/BaseLayout.astro';
