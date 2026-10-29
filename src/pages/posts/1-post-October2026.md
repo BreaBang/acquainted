@@ -1,7 +1,18 @@
+---
+layout: ../layouts/markdownpostlayout.astro
+title: November 2026
+publishDate: November 2026
+img: /assets/november.jpg
+img_alt: A group of elk in the aspen forsest. 
+description:
+ November events
+tags:
+  - Events
+  - November
+---
+# October 2026 Events
 
-<h1>>October 2026 Events</h1>
-
-<>>In-Person
+## In-Person
 - **Oct 3** - <a href="https://womenswilderness.org/programs/run-5k/" target="_blank">I Can 5k Fun-raiser in Thornton</a> | Cost: Donation-Based
 
 - **Oct 7** - <a href="https://www.instagram.com/p/DdkTc4NJgGn/" target="_blank">The Jorts Ride (Bikes)</a> | Cost: $0
