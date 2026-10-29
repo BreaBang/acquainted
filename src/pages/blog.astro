@@ -1,31 +1,37 @@
 ---
+import { getCollection } from 'astro:content';
+import ContactCTA from '../components/ContactCTA.astro';
+import Grid from '../components/Grid.astro';
+import Hero from '../components/Hero.astro';
+import ResourcesPreview from '../components/ResourcesPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import BlogPost from '../components/BlogPosts.astro';
-const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
-const {title, url } = Astro.props;
-const pageTitle = "Colorado Side Quests";
 
-
+const projects = (await getCollection('resources')).sort(
+	(b, a) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
+);
 ---
-<html lang="en">
-  <head>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width" />
-    <title>{pageTitle}</title>
-  </head>
-  <body>
-    <BaseLayout title={pageTitle}>
-      <section>
-        <h1>Blog</h1>
-        <ul>
-          {allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
-        </ul>
-   
-    </section>
-   <section>
-      <h2>Disclaimer</h2>
-      <p>These events are not hosted by or affiliated with Colorado Side Quests in any way shape or form. Colorado Side Quests does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Colorado Side Quests at your own risk.**</p>
-    </section>
-    </BaseLayout>
-  </body>
-</html>
+
+<BaseLayout
+	title="Resources"
+	description="Resources to live your best life and pursue your passions."
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Resources"
+				tagline="Resources to live your best life and pursue your passions."
+				align="start"
+			/>
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<ResourcesPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
