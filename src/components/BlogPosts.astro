@@ -1,8 +1,4 @@
 ---
-//const { title, url } = Astro.props
-//<body>
-    //<li><a href={url}>{title}</a></li>
-//</body>
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -10,9 +6,9 @@ interface Props {
 }
 
 const { data, id } = Astro.props.project;
+const { title, url } = Astro.props
 ---
-
-<a class="card" href={`../content/posts/${id}`}>
+    <a class="card" href={url}>{title}</a>
 	<span class="title">{data.title}</span>
 	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
 </a>
