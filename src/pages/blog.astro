@@ -21,12 +21,13 @@ import Blogposts from '../components/BlogPosts.astro';
 					alt="Three women with their arms around each other, backs to the camera."
 				/>
 			</Hero>
-			
-		</main>
-		<section>
+			<section>
+				<h2 class="section-title">Blog Archive</h2>
+				<div class="content">
 				<ul>
           			{allPosts.map((post: any) => <Blogposts url={post.url} title={post.frontmatter.title} />)}
         		</ul>
+				</div>
 			</section>
 			<section>
 				<h2 class="section-title">Disclaimer</h2>
@@ -36,6 +37,9 @@ import Blogposts from '../components/BlogPosts.astro';
 					</p>
 					</div>
 			</section>
+			
+		</main>
+		
 
 		<ContactCTA />
 	</div>
