@@ -5,7 +5,7 @@ import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
 import BlogPreview from '../components/BlogPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-
+const { title, url } = Astro.props
 const projects = (await getCollection('posts')).sort(
 	(b, a) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
@@ -18,16 +18,16 @@ const projects = (await getCollection('posts')).sort(
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="Resources"
-				tagline="Monthly blog post"
+				title="Blog Posts"
+				tagline="Our monthly blog posts on local events."
 				align="start"
 			/>
 			<Grid variant="offset">
 				{
 					projects.map((project) => (
-						<li>
-							<BlogPreview project={project} />
-						</li>
+						<ul>
+              <li><a href={url}>{title}</a></li>
+            </ul>  
 					))
 				}
 			</Grid>
