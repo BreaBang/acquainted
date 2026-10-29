@@ -6,20 +6,20 @@ import Hero from '../components/Hero.astro';
 import BlogPreview from '../components/BlogPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const projects = (await getCollection('resources')).sort(
+const projects = (await getCollection('posts')).sort(
 	(b, a) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
 );
 ---
 
 <BaseLayout
 	title="Blog"
-	description="Resources to live your best life and pursue your passions."
+	description="Our monthly blog posts on local events"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
 				title="Resources"
-				tagline="Resources to live your best life and pursue your passions."
+				tagline="Monthly blog post"
 				align="start"
 			/>
 			<Grid variant="offset">
