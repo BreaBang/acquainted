@@ -1,19 +1,7 @@
----
-title: October 2026
-publishDate: October 2026
-img: /assets/basic.jpg
-img_alt: four blocks with icons describing the basic needs of food, shelter, medication and clothing.
-description: |
- Links to resources related to having your basic needs met
-tags:
-  - Food
-  - IDs
-  - Shelter
-  - Medication
----
-## October 2026 Events
 
-### In-Person
+<h1>>October 2026 Events</h1>
+
+<>>In-Person
 - **Oct 3** - <a href="https://womenswilderness.org/programs/run-5k/" target="_blank">I Can 5k Fun-raiser in Thornton</a> | Cost: Donation-Based
 
 - **Oct 7** - <a href="https://www.instagram.com/p/DdkTc4NJgGn/" target="_blank">The Jorts Ride (Bikes)</a> | Cost: $0
