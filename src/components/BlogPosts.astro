@@ -1,5 +1,10 @@
 ---
+import { type CollectionEntry, getCollection, render } from 'astro:content';
 import MarkDownPostLayout from "../layouts/MarkDownPostLayout.astro";
+import Hero from "../components/Hero.astro";
+import Pill from "../components/Pill.astro";
+import Icon from '../components/Icon.astro';
+
 interface Props {
 	title?: string | undefined;
 	description?: string | undefined;
@@ -7,9 +12,35 @@ interface Props {
 
 const { title, description } = Astro.props;
 const url = "../pages/posts/";
+const entry = Astro.props;
+const content = await render(entry);
+
+interface Props {
+	entry: CollectionEntry<'posts'>;
+}
+
+// This is a dynamic route that generates a page for every Markdown file in src/content/
+// Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
+// https://docs.astro.build/en/guides/routing/#dynamic-routes
+export async function getStaticPaths() {
+	const post = await getCollection('posts');
+	return post.map((entry) => ({
+		params: { slug: entry.id },
+		props: { entry },
+	}));
+}
+//<li><a href={url}>{title}</a></li>
+
 ---
 <body>
 <MarkDownPostLayout>
-    <li><a href={url}>{title}</a></li>
+<header>
+				<div class="wrapper stack gap-2">
+					<a class="back-link" href="/posts/"><Icon icon="arrow-left" /> Blog Posts</a>
+					<Hero title={entry.title} align="start">
+					</Hero>
+				</div>
+			</header>
+    
 </MarkDownPostLayout>
 </body>
