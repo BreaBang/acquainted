@@ -1,14 +1,6 @@
 ---
-layout: "../layouts/BaseLayout.astro"
-title: November 2026
-publishDate: November 2026
-img: /assets/november.jpg
-img_alt: A group of elk in the aspen forsest. 
-description:
- November events
-tags:
-  - Events
-  - November
+title: October 2026
+publishDate: October 2026
 ---
 # October 2026 Events
 
