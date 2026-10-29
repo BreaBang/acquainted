@@ -15,8 +15,8 @@ interface Props {
 }
 
 export async function getStaticPaths() {
-	const resource = await getCollection('posts');
-	return resource.map((entry) => ({
+	const posts = await getCollection('posts');
+	return posts.map((entry) => ({
 		params: { slug: entry.id },
 		props: { entry },
 	}));
