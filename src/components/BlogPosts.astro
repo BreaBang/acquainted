@@ -8,10 +8,7 @@ interface Props {
 const { data, id } = Astro.props.project;
 const { title, url } = Astro.props
 ---
-    <a class="card" href={url}>{title}</a>
-	<span class="title">{data.title}</span>
-	<img src={data.img} alt={data.img_alt || ''} loading="lazy" decoding="async" />
-</a>
+    <li><a href={url}>{title}</a></li>
 
 <style>
 	.card {
