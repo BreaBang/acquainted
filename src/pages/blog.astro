@@ -1,41 +1,97 @@
 ---
-import { getCollection } from 'astro:content';
+const allPosts = Object.values(import.meta.glob('./posts/*.md', { eager: true }));
+const {title, url } = Astro.props;
 import ContactCTA from '../components/ContactCTA.astro';
-import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
-import BlogPreview from '../components/BlogPreview.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-const { title, url } = Astro.props
-const projects = (await getCollection('posts')).sort(
-	(b, a) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf(),
-);
 ---
 
-<BaseLayout
-	title="Blog"
-	description="Our monthly blog posts on local events"
->
+<BaseLayout title="Blog | Side Quests Colorado" description="The monthly Side Quests Colorado events blog.">
 	<div class="stack gap-20">
-		<main class="wrapper stack gap-8">
+		<main class="wrapper about">
 			<Hero
-				title="Blog Posts"
-				tagline="Our monthly blog posts on local events."
-				align="start"
-			/>
-			<Grid variant="offset">
-				{
-					projects.map((project) => (
-						<ul>
-              <li><a href={url}>{title}</a></li>
-            </ul>  
-					))
-				}
-			</Grid>
-      <section>
-      <h2>Disclaimer</h2>
-      <p>These events are not hosted by or affiliated with Colorado Side Quests in any way shape or form. Colorado Side Quests does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Colorado Side Quests at your own risk.**</p>
-    </section>
+				title="Events Blog"
+				tagline="The monthly Side Quests Colorado events blog."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/women-together.jpg"
+					alt="Three women with their arms around each other, backs to the camera."
+				/>
+			</Hero>
+			<section>
+				<ul>
+          			{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+        		</ul>
+			</section>
+			<section>
+				<h2 class="section-title">Disclaimer</h2>
+				<div class="content">
+					<p>
+						These events are not hosted by or affiliated with Colorado Side Quests in any way shape or form. Colorado Side Quests does not endorse any group or organization tied to these events. You must do your own research about any event or organization you intend to participate in. You are responsible for your own safety both in-person and online. **Use any of the content on Colorado Side Quests at your own risk.**
+					</p>
+			</section>
 		</main>
+
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
