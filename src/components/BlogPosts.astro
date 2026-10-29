@@ -1,6 +1,11 @@
 ---
 import MarkDownPostLayout from "../layouts/MarkDownPostLayout.astro";
-const { title, url } = Astro.props
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
 ---
 <body>
 <MarkDownPostLayout>
