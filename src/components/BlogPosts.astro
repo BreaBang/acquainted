@@ -1,6 +1,9 @@
 ---
+import MarkDownPostLayout from "../layouts/MarkDownPostLayout.astro";
 const { title, url } = Astro.props
 ---
 <body>
+<MarkDownPostLayout>
     <li><a href={url}>{title}</a></li>
+</MarkDownPostLayout>
 </body>
