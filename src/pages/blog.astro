@@ -17,12 +17,12 @@ import Blogposts from '../components/BlogPosts.astro';
 				<img
 					width="1553"
 					height="873"
-					src="/assets/women-together.jpg"
-					alt="Three women with their arms around each other, backs to the camera."
+					src="/assets/events.jpg"
+					alt="Two women working together in garden to harvest."
 				/>
 			</Hero>
 			<section>
-				<h2 class="section-title">Blog Archive</h2>
+				<h2 class="section-title">Blog Posts</h2>
 				<div class="content">
 				<ul>
           			{allPosts.map((post: any) => <Blogposts url={post.url} title={post.frontmatter.title} />)}
