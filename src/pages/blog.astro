@@ -4,6 +4,7 @@ const {title, url } = Astro.props;
 import ContactCTA from '../components/ContactCTA.astro';
 import Hero from '../components/Hero.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Blogposts from '../components/BlogPosts.astro';
 ---
 
 <BaseLayout title="Blog | Side Quests Colorado" description="The monthly Side Quests Colorado events blog.">
@@ -22,7 +23,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 			</Hero>
 			<section>
 				<ul>
-          			{allPosts.map((post: any) => <BlogPost url={post.url} title={post.frontmatter.title} />)}
+          			{allPosts.map((post: any) => <Blogposts url={post.url} title={post.frontmatter.title} />)}
         		</ul>
 			</section>
 			<section>
