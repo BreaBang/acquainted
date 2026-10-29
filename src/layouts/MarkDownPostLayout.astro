@@ -1,8 +1,10 @@
 ---
-import Baselayout from "../layouts/BaseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 const { frontmatter } = Astro.props;
+const pageTitle = Astro.props;
+const {title, url } = Astro.props;
 ---
-<Baselayout title={frontmatter.title}>
+<BaseLayout pageTitle={frontmatter.title}>
   <p><em>{frontmatter.description}</em></p>
   <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
 
@@ -17,7 +19,7 @@ const { frontmatter } = Astro.props;
   </div>
 
   <slot />
-</Baselayout>
+</BaseLayout>
 <style>
   a {
     color: #00539F;
