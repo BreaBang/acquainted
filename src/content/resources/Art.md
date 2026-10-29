@@ -1,5 +1,5 @@
 ---
-title: November Bikes
+title: Art
 publishDate: October 2026
 img: /assets/art.jpg
 img_alt: Painting drawing colorful
