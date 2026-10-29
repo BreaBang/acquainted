@@ -1,5 +1,5 @@
 ---
-layout: "../layouts/MarkDownPostLayout.astro"
+layout: ../layouts/MarkDownPostLayout.astro
 title: November 2026
 publishDate: November 2026
 img: /assets/november.jpg
