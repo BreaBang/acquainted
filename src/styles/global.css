@@ -220,6 +220,9 @@ h5 {
 	font-weight: 500;
 
 }
+.date {
+		font-weight: 800;
+	}
 
 .gap-2 {
 	gap: 0.5rem;
