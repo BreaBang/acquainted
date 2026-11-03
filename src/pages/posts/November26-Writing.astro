@@ -21,8 +21,8 @@ import Hero from "../../components/Hero.astro"
 	<h2 class="section-title">Writing</h2>
 		<div class="content">
 			<h3>Nov 4: Boulder Library Writers Cafe</h3>
-				<p>5:30 PM to 6:30 PM at the Main Library. </p>
-				<p>Enjoy dedicated writing time and build your writing community at Writers Cafe, a drop-in writing meet up!</p>
+				<p class="space-p">5:30 PM to 6:30 PM at the Main Library. </p>
+				<p class="space-p">Enjoy dedicated writing time and build your writing community at Writers Cafe, a drop-in writing meet up!</p>
 				<p>Check out their <a href="https://calendar.boulderlibrary.org/event/17522081" target="_blank">event calendar here</a>.</p>
 		</div>
 		<div class="content">
@@ -91,6 +91,12 @@ No requirements to join, just an interest in writing and community!</p>
 </BaseLayout>
 
 <style>
+	.space-p{
+		padding: 1rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}
 	.about {
 		display: flex;
 		flex-direction: column;
