@@ -1,0 +1,124 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import ContactCTA from "../../components/ContactCTA.astro"
+import Hero from "../../components/Hero.astro"
+---
+<BaseLayout title="November Events | Side Quests Colorado" description="November 2026 Events">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="November 2026 Bike Events"
+				tagline="Check out the cool events you can go to in November."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/november-bikes.png"
+					alt="A bike and daisies."
+				/>
+    </Hero>
+	<section>
+		<h2 class="section-title">More Events</h2>
+			<div class="content">
+				<h3>Nov 7 (14, 21, & 28): Arts and Cats</h3>
+				<p class="space-p">Every Saturday between 2 PM and 5 PM, it’s Arts & Cats open crafting time. Bring a project you’re working on, or grab some supplies from our lockers. </p>
+				<p>Learn more on the <a href="https://www.catpeopleden.com/calendar/arts-cats-11-07" target="_blank">Cat People Denver Event Page</a></p>
+			</div>
+			<div class="content">
+				<h3>Nov 7: Book Fair</h3>
+				<p class="space-p">Grab a pint and pick up a book! On Saturday, November 7th from 1-4PM, join @redlegbrewco for a book fair on the Red Leg lawn! Come meet local authors, check out their books, and maybe even buy some of their products! This event is free to attend and will feature other local vendors.</p>
+				<p>Learn more on the <a href="https://www.instagram.com/p/DfDP9uYFMmH/" target="_blank">@redlegbrewco post</a></p>
+			</div>
+			<div class="content">
+				<h3>Nov 8: Learn to Crochet</h3>
+				<p class="space-p">From 2 PM to 5 PM, learn how to crochet with Louisa! No experience necessary. If you’ve attended one of these before, she’ll build on the skills you learned last time. This class is great for all ages.</p>
+				<p>Learn more on the <a href="https://www.catpeopleden.com/calendar/crochet-for-beginners-1-99sty" target="_blank">Cat People Denver Event Page</a></p>
+			</div>
+			<div class="content">
+				<h3></h3>
+				<p class="space-p"></p>
+				<p>Learn more on the <a href="" target="_blank"></a></p>
+			</div>
+			<div class="content">
+				<h3></h3>
+				<p class="space-p"></p>
+				<p><a href="" target="_blank"></a></p>
+			</div>
+	</section>
+	<section>
+				<h2 class="section-title">Disclaimers</h2>
+					<div class="content">
+						<p>
+							Colorado Side Quests does not endorse any of the events, organizations and individuals listed on this page or on our site. The information provided is information only. Attend any event at your own risk. Neither Colorado Side Quests, nor it's contributors are not responsible for your health, safety or wellbeing and will not be held responsible for any real or percieved injuries you face after attending any of the events listed on our site or by using any third-party links on our site. We cannot control you or any third-party individual or organization or their website. Use the Colorado Side Quests website or Instagram at your own risk.
+						</p>
+					</div>
+			</section>
+      </main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.space-p{
+		padding-bottom: 1rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
