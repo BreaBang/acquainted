@@ -1,0 +1,117 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import ContactCTA from "../../components/ContactCTA.astro"
+import Hero from "../../components/Hero.astro"
+---
+<BaseLayout title="December Bike Events | Side Quests Colorado" description="December 2026 Bike Events">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="December 2026 Bike Events"
+				tagline="Check out the cool events you can go to in November."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/november-bikes.png"
+					alt="A bike and daisies."
+				/>
+    </Hero>
+	<section>
+		<h2 class="section-title">Bikes</h2>
+			<div class="content">
+				<h3></h3>
+				<p><a href="" target="_blank"></a></p>
+			</div>
+			<div class="content">
+				<h3>Nov 8: Women's Ride</h3>
+				<p><a href="https://www.instagram.com/p/DfNtZMoGmuT/" target="_blank">Pedal Bike Shop</a> is hosting a Women's ride.</p>
+				<p>Meet at 2640 W Belleview Ave, Ste 100, Littleton at 10:30 AM on Sunday, Nov 8 and wheels up at 11:00 AM.</p>
+				<p>This is a no-drop ride.</p>
+			</div>
+			<div class="content">
+				<h3>Dec : Fem's and Thems Ride</h3>
+				<p>Location:</p>
+				<p>Time:</p>
+				<p><a href="" target="_blank">@</a> </p>
+			</div>
+			<div class="content">
+				<h3>Nov 14: Black Girls Do Bike Denver Monthly Ride</h3>
+				<p>Location and time TBD. All rides are no-drop rides.</p>
+				<p>Join the <a href="https://www.facebook.com/groups/blackgirlsdobikeDENVER" target="_blank">Facebook</a> or <a href="https://www.strava.com/clubs/318834?hl=pt-BR" target="_blank">Strava</a> group to find out more.</p>
+			</div>
+	</section>
+	<section>
+				<h2 class="section-title">Disclaimers</h2>
+					<div class="content">
+						<p>
+							Colorado Side Quests does not endorse any of the events, organizations and individuals listed on this page or on our site. The information provided is information only. Attend any event at your own risk. Neither Colorado Side Quests, nor it's contributors are not responsible for your health, safety or wellbeing and will not be held responsible for any real or percieved injuries you face after attending any of the events listed on our site or by using any third-party links on our site. We cannot control you or any third-party individual or organization or their website. Use the Colorado Side Quests website or Instagram at your own risk.
+						</p>
+					</div>
+			</section>
+      </main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	h3 {
+		font-size: 1.25rem;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
