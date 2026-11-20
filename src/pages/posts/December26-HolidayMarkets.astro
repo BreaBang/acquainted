@@ -1,0 +1,142 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro"
+import ContactCTA from "../../components/ContactCTA.astro"
+import Hero from "../../components/Hero.astro"
+---
+<BaseLayout title="December Holiday Market Events | Side Quests Colorado" description="December 2026 Holiday Markets">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="December 2026 Holiday Markets"
+				tagline="Holiday Markets for local shopping."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/holidaymarket.png"
+					alt="A woman looking at a christmas stocking in a store."
+				/>
+    </Hero>
+	<section>
+		<h2 class="section-title">Colorado Holiday Markets</h2>
+						<p class="space-p">Remember to check with the organizaer before attending. Some events are free and others require a ticket to be purchased in advance.</p>
+			<div class="content">
+				<h3>Dec 3: Grand Holiday Market in Denver</h3>
+				<p class="space-p"><b>Time:</b> 4 PM -7 PM<b> Location:</b> 1750 Welton St, Denver, CO 80202</p>
+				
+				<p>Link to Learn More:<a href="https://www.instagram.com/p/Df6AGkaFDCW/?img_index=1" target="_blank">@grandhyattdenver IG post</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec 5: Vegan Holiday Market in Boulder</h3>
+				<p class="space-p"><b>Time:</b> 11 AM - 3 PM<b> Location: Avalon Ballroom 6185 Arapahoe RoadBoulder, CO, 80303</b></p>
+				<p>Link to Learn More:<a href="https://www.vegfestco.com/upcoming-events/event-two-ftcpy-32dx7-h6rz6-m6y73-kp92l" target="_blank">VFCO Webpage</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec 5-6: Wings & Wonder Holiday Gift Market</h3>
+				<p class="space-p"><b>Time: 9 AM - 2 PM</b><b>Location:</b>11280 Waterton Rd, Littleton, CO 80125</p>
+				<p>Get a Ticket:<a href="https://denveraudubon.app.neoncrm.com/nx/portal/neonevents/events?path=%2Fportal%2Fevents%2F61974" target="_blank">Registration Website</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec : </h3>
+				<p class="space-p"><b>Location:</b></p>
+				<p>Link to Learn More:<a href="" target="_blank">Link</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec : </h3>
+				<p class="space-p"><b>Location:</b></p>
+				<p>Link to Learn More:<a href="" target="_blank">Link</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec : </h3>
+				<p class="space-p"><b>Location:</b></p>
+				<p>Link to Learn More:<a href="" target="_blank">Link</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec : </h3>
+				<p class="space-p"><b>Location:</b></p>
+				<p>Link to Learn More:<a href="" target="_blank">Link</a></p>
+			</div>
+			<div class="content">
+				<h3>Dec : </h3>
+				<p class="space-p"><b>Location:</b></p>
+				<p>Link to Learn More:<a href="" target="_blank">Link</a></p>
+			</div>
+			
+	</section>
+	<section>
+				<h2 class="section-title">Disclaimers</h2>
+					<div class="content">
+						<p>
+							Colorado Side Quests does not endorse any of the events, organizations and individuals listed on this page or on our site. The information provided is information only. Attend any event at your own risk. Neither Colorado Side Quests, nor it's contributors are not responsible for your health, safety or wellbeing and will not be held responsible for any real or percieved injuries you face after attending any of the events listed on our site or by using any third-party links on our site. We cannot control you or any third-party individual or organization or their website. Use the Colorado Side Quests website or Instagram at your own risk.
+						</p>
+					</div>
+			</section>
+      </main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.space-p{
+		padding-bottom: 1rem;
+	}
+	h3 {
+		font-size: 1.25rem;
+	}
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
